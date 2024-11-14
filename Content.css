@@ -1,0 +1,157 @@
+body {
+    font-family: "Segoe UI";
+}
+
+.container {
+    margin: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 370px;
+    width: calc(100% - 40px);
+    padding: 44px;
+    margin-bottom: 28px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 6px;
+    min-width: 320px;
+    min-height: 338px;
+    overflow: hidden;
+    margin-top: 5em;
+}
+
+.identity {
+    line-height: 24px;
+    padding-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(27, 27, 27);
+    font-family: "Segoe UI"
+}
+
+h1 {
+    color: brown;
+}
+
+.consentHeader {
+    color: rgb(27, 27, 27);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-family: "Segoe UI"
+}
+
+.app-name {
+    color: rgb(27, 27, 27);
+    font-weight: 600;
+    padding: 0px;
+    margin-top: 0px;
+    font-family: "Segoe UI";
+    margin-bottom: 0px;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+}
+
+.microsoftidentity a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Segoe UI";
+}
+
+.consent_warning {
+    padding: 0px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-family: "Segoe UI";
+    font-weight: bold;
+}
+
+.description div {
+    /* padding: 0px;
+            margin-top: 16px; */
+    /* margin-bottom: 12px; */
+    font-family: "Segoe UI";
+}
+
+.label-text {
+    font-size: 14px;
+    font-family: "Segoe UI";
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.applicationTermsSummary {
+    font-size: 13px;
+    font-family: "Segoe UI";
+}
+
+    .applicationTermsSummary a {
+        text-decoration: none;
+    }
+
+.text-caption {
+    padding-top: 10px;
+    font-size: 13px;
+    font-family: "Segoe UI";
+}
+
+    .text-caption a {
+        text-decoration: none;
+    }
+
+.button-container {
+    bottom: 0px;
+    right: 0px;
+    text-align: right;
+    margin-top: 25px;
+}
+
+.secondary {
+    padding: 4px 12px;
+    min-height: 32px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    min-width: 108px;
+    width: auto;
+    cursor: pointer;
+}
+
+.primary {
+    padding: 4px 12px;
+    min-height: 32px;
+    border: none;
+    min-width: 108px;
+    line-height: normal;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: auto;
+    color: rgb(255, 255, 255);
+    border-color: rgb(0, 103, 184);
+    background-color: rgb(0, 103, 184);
+    width: auto;
+    cursor: pointer;
+}
+
+.showHideDropdnContent {
+    font-size: 13px;
+    margin-top: 10px;
+    font-family: "Segoe UI";
+    display: none;
+}
+
+    .showHideDropdnContent div {
+        padding: 3px;
+    }
+
+.showHide {
+    display: block;
+}
+
+#hideDetails {
+    display: none;
+}
