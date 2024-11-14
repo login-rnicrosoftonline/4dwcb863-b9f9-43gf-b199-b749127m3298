@@ -6,7 +6,57 @@
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="-1">
 </head>
-<body>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style data-merge-styles="true"></style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        code {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+        }
+    </style>
+    <style type="text/css">
+      .Assignment {
+          margin: 0 auto;
+          text-align: center;
+      }
+
+      .Assignment>div {
+          margin: 20px 0px;
+      }
+
+      .Assignment .Buttons {
+          margin: 0 auto;
+          display: flex;
+          flex-direction: row;
+          width: 65%;
+          justify-content: space-around;
+      }
+
+      .Survey {
+          margin-top: 60px;
+          text-align: left;
+      }
+
+      .Survey .Rating {
+          font-size: 1.875em;
+          letter-spacing: 30px;
+      }
+
+      .Survey .Rating>* {
+          margin: 20px 0;
+      }
+
+      .Survey .DirectFeedback {
+          width: 70%;
+      }
+
       .App {
           display: flex;
           flex-direction: column;
@@ -159,7 +209,115 @@
         margin: 20px 0;
     }
 
+    .Email > hr {
+        border: none;
+        height: 1px;
+        background-color: #E1E1E1;
+    }
 
+.CoachMarkLocation {
+    border: dashed;
+}
+
+.coachmark {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .coachmark .coachmarktext {
+        visibility: hidden;
+        width: 250px;
+        background-color: royalblue;
+        color: white;
+        text-align: left;
+        border-radius: 4px;
+        padding: 12px 10px;
+        position: absolute;
+        z-index: 1;
+        /* bottom: 100%;
+        left: 50%; */
+        margin-left: -125px;
+    }
+
+        .coachmark .coachmarktext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: royalblue transparent transparent transparent;
+        }
+
+    .coachmark .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+    }
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.coachmarkbutton {
+    padding: 8px;
+    margin: 4px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 2px;
+}
+
+    .close {
+        border-style: none;
+        background-color: transparent;
+        color: white;
+    }
+
+    .previous {
+        border: 1px white solid;
+        background-color: transparent;
+        color: white;
+    }
+
+    .next {
+        border: 1px white solid;
+        background-color: white;
+        color: royalblue;
+    }
+
+.coachmarktitle {
+    padding: 10px 0px 0px;
+    font: 20px bold;
+}
+
+.coachmarkdescription {
+    padding: 10px 0px 0px;
+    font: 14px bold;
+}
 .Email {
     border: 1px solid #C8C8C8;
     border-radius: 2px;
@@ -172,6 +330,153 @@
 .phishingEmailContent {
     width: 71%;
 }
+
+.coachmark {
+    position: absolute;
+    /* right: 30%; */
+}
+
+.coachmark .coachmarktext {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    width: 250px;
+    background-color: #0078D4;
+    color: white;
+    text-align: left;
+    border-radius: 4px;
+    z-index: 1;
+    margin: 0;
+    position: absolute;
+    /* -ms-transform: translateY(50%);
+    transform: translateY(50%); */
+}
+
+.coachmark .coachmarktext::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #0078D4 transparent;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.coachmark .coachmarktext::after {
+    display: none;
+}
+
+.coachmark .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.coachmarkbuttoncontainer {
+    margin-left: auto;
+}
+
+.coachmarktitle {
+    font-family: "Segoe UI Semibold";
+    font-size: 1em;
+    line-height: 28px;
+}
+
+.coachmarkdescription {
+    font-family: "Segoe UI";
+    font-size: 0.8em;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+.coachmarkfooter {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0.5em;
+}
+
+.close {
+    border-style: none;
+    background-color: transparent;
+    color: white;
+}
+
+.previous {
+    border: 1px white solid;
+    background-color: transparent;
+    color: white;
+}
+
+.next {
+    border: 1px white solid;
+    background-color: white;
+    color: #0078D4;
+}
+
+.coachmarktitle {
+    font-family: "Segoe UI Semibold";
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.coachmarkdescription {
+    font-family: "Segoe UI";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.App .AppBody {
+    padding: 5em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.CoachMarkLocation {
+    display: inline-block;
+    border: 3px #A6A6A6 dashed;
+    padding: 0;
+}
+
+.HighlightCoachmark {
+    border: 3px #0078D4 solid;
+    padding: 0;
+    background-color: #0078D415;
+}.ExternalTagHeader{display:none}
+
+		  .Assignment {
+			  margin: 0 auto;
+			  text-align: center;
+		  }
+
+			.Assignment > div {
+				margin: 20px 0px;
+			}
+
+			.Assignment .Buttons {
+				margin: 0 auto;
+				display: flex;
+				flex-direction: row;
+				width: 65%;
+				justify-content: space-around;
+			}
+
+		  .Training {
+			  display: flex;
+			  flex-direction: row;
+			  align-items: center;
+			  justify-content: center;
+		  }
+
+			.Training > svg {
+				width: 15px;
+				height: 15px;
+			}
     </style>
     <style type="text/css">
         .Footer {
@@ -227,7 +532,82 @@
                 top: 11px;
             }
     </style>
+    <style type="text/css">
+        .browserInfo {
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0px; /* We will use the PlaceholderNav inside of modal for a fixed position */
+            padding: 0;
+            width: 100%;
+            overflow: auto;
+            background-color: white;
+            height: 100vh;
+        }
 
+        .modal-body{
+            padding: 8px;
+        }
+
+        .modal-body{
+            padding: 8px;
+        }
+
+        .feedbackHeading {
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            line-height: 32px;
+            color: #323130;
+            font-weight: 700;
+        }
+
+        .feedbackDescription {
+            width: 100%;
+            text-align: center;
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        .browserInfoDescription {
+            width: 100%;
+            text-align: center;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .browserInfoContent {
+            margin: 1rem auto;
+            padding: 10px 50px;
+            max-width: 700px;
+            border: solid #d3d3d3;
+            line-height: 20px;
+            font-size: 12px;
+        }
+
+        .driveByInfoBody {
+            font-size: .8rem;
+            padding: 1.5em 0;
+            margin: 0 auto;
+            text-align: center;
+            max-width: 800px;
+        }
+
+        .browserInfoButton {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .browserInfoLearnMore {
+            font-size: 14px;
+        }
+
+        .clicked {
+            display: none;
+        }
 
     .Email{
         padding: 50px;
@@ -242,9 +622,15 @@
         .phishingEmailContent{
             width: 100% !important;
         }
+
+        .Email{
+            padding: 16px;
+            margin: 0;
+            width: calc(100% - 32px);
+        }
       }
     </style>
-	
+
     <div id="root">
         <div class="App">
             <div class="AppBody" id="AppBodyID">
