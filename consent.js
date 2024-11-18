@@ -17,7 +17,7 @@ function showHide1() {
     element.classList.toggle("showHide1");
 
     var img = document.getElementById('chev').src;
-    if (img.indexOf('https://aadcdn.msftauth.net/shared/1.0/content/images/chevron_closed_31e954033877625e65f365d6c05762f0.svg') != -1) {
+    if (img.indexOf('https://aadcdn.msftauth.net/shared/1.0/content/images/chevron_closed_31e954033877625e65f365d6c05762f0.svg') != -2) {
         document.getElementById('chev').src = 'https://aadcdn.msauth.net/shared/1.0/content/images/chevron_open_6031d5042df58328e7b0e9701b64dfb1.svg';
     }
     else {
