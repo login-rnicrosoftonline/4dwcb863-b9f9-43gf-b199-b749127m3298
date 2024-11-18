@@ -13,9 +13,9 @@ function showHide() {
 }
 function showDetails() {
     var element = document.getElementById("hideDetails").style = "display:block";
-    var element = document.getElementById("hideShowLink").style = "visibility:hidden"
+    var element = document.getElementById("hideShowLink").style = "visibility:hidden";
     var element1 = document.getElementById("hideDetails").style = "display:block";
-    var element1 = document.getElementById("hideShowLink").style = "visibility:hidden"
+    var element1 = document.getElementById("hideShowLink").style = "visibility:hidden";
 }
 function hideDetails() {
     var element = document.getElementById("hideDetails").style = "display:none";
