@@ -1,6 +1,6 @@
 function showHide() {
     var element = document.getElementById("showHideDropdnContent");
-    var element = document.getElementById("showHideDropdnContent1");
+    var element1 = document.getElementById("showHideDropdnContent1");
     element.classList.toggle("showHide");
 
     var img = document.getElementById('chev').src;
@@ -14,10 +14,14 @@ function showHide() {
 function showDetails() {
     var element = document.getElementById("hideDetails").style = "display:block";
     var element = document.getElementById("hideShowLink").style = "visibility:hidden"
+    var element1 = document.getElementById("hideDetails").style = "display:block";
+    var element1 = document.getElementById("hideShowLink").style = "visibility:hidden"
 }
 function hideDetails() {
     var element = document.getElementById("hideDetails").style = "display:none";
     var element = document.getElementById("hideShowLink").style = "display:visible; color: #0067B8; cursor: pointer";
+    var element1 = document.getElementById("hideDetails").style = "display:none";
+    var element1 = document.getElementById("hideShowLink").style = "display:visible; color: #0067B8; cursor: pointer";
 }
 
 document.getElementById("hideShowLink").addEventListener("click", showDetails); 
