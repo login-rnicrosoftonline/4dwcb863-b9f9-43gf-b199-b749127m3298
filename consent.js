@@ -11,10 +11,12 @@ function showHide() {
         document.getElementById('chev').src = 'https://aadcdn.msftauth.net/shared/1.0/content/images/chevron_closed_31e954033877625e65f365d6c05762f0.svg';
     }
 }
+*/
 function showDetails() {
     var element = document.getElementById("hideDetails").style = "display:block";
     var element = document.getElementById("hideShowLink").style = "visibility:hidden";
 }
+
 function hideDetails() {
     var element = document.getElementById("hideDetails").style = "display:none";
     var element = document.getElementById("hideShowLink").style = "display:visible; color: #0067B8; cursor: pointer";
