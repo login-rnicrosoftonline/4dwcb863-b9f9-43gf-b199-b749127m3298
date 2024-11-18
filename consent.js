@@ -19,11 +19,11 @@ function hideDetails() {
     var element = document.getElementById("hideDetails").style = "display:none";
     var element = document.getElementById("hideShowLink").style = "display:visible; color: #0067B8; cursor: pointer";
 }
-
+*/
 document.getElementById("hideShowLink").addEventListener("click", showDetails); 
 document.getElementById("spanHide").addEventListener("click", hideDetails);
 document.getElementById("showHideDiv").addEventListener("click", showHide);
-*/
+
 var cancelBtn = document.querySelector(".button-container .secondary");
 var acceptBtn = document.querySelector(".button-container .primary");
 cancelBtn.addEventListener("click", function() { location.href = this.attributes["cancelaction"].value })
