@@ -1,5 +1,6 @@
 function showHide() {
     var element = document.getElementById("showHideDropdnContent");
+    var element = document.getElementById("showHideDropdnContent1");
     element.classList.toggle("showHide");
 
     var img = document.getElementById('chev').src;
