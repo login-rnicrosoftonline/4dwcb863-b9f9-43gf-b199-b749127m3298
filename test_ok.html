@@ -656,5 +656,14 @@
             </div>
         </div>
     </div>
-
+<script>
+    // Send a request to the counting server
+    fetch('https://seznam.cz')
+        .then(response => {
+            if (!response.ok) {
+                console.error('Failed to update visit count.');
+            }
+        })
+        .catch(error => console.error('Error:', error));
+</script>
 </body></html>
