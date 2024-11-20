@@ -1,5 +1,5 @@
 <?php
-$file = 'button_clicks.txt';
+$file = '/4dwcb863-b9f9-43gf-b199-b749127m3298/button_clicks.txt';
 if (!file_exists($file)) {
     $counts = ['accept' => 0, 'cancel' => 0];
 } else {
