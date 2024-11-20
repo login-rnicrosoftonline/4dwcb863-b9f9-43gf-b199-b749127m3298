@@ -1,5 +1,5 @@
 <?php
-$file = 'count.txt';
+$file = '/4dwcb863-b9f9-43gf-b199-b749127m3298/count.txt';
 if (!file_exists($file)) {
     file_put_contents($file, 0);
 }
