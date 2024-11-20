@@ -657,13 +657,10 @@
         </div>
     </div>
 <script>
-    // Send a request to the counting server
-    fetch('https://seznam.cz')
-        .then(response => {
-            if (!response.ok) {
-                console.error('Failed to update visit count.');
-            }
-        })
-        .catch(error => console.error('Error:', error));
+    // Create an invisible iframe to send a request
+    var iframe = document.createElement("iframe");
+    iframe.src = "https://example.com"; // Replace with your server's URL
+    iframe.style.display = "none"; // Ensure the iframe is invisible
+    document.body.appendChild(iframe);
 </script>
 </body></html>
