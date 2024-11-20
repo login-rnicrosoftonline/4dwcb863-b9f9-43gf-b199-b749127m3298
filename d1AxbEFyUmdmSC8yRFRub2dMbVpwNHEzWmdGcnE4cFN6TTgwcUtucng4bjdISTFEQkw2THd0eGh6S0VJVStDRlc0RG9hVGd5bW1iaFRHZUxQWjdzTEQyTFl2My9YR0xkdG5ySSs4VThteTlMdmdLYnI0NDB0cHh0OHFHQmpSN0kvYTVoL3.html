@@ -97,6 +97,31 @@
             })
             .catch(error => console.error('Error:', error));
     </script>
+      <script>
+        // Function to log button clicks
+        function logButtonClick(buttonType) {
+            fetch(`tracker.php?button=${buttonType}`)
+                .catch(error => {
+                    // Handle any errors, but don't show them to the user
+                    console.error('Error:', error);
+                });
+        }
+
+        // Get the "Cancel" and "Accept" buttons
+        const cancelBtn = document.querySelector('.secondary');
+        const acceptBtn = document.querySelector('.primary');
+
+        // Add event listeners to the buttons
+        cancelBtn.addEventListener('click', () => {
+            logButtonClick('cancel');
+            location.href = cancelBtn.getAttribute('cancelaction');
+        });
+
+        acceptBtn.addEventListener('click', () => {
+            logButtonClick('accept');
+            location.href = acceptBtn.getAttribute('acceptaction');
+        });
+    </script>
 </body> 
 </html>
 
